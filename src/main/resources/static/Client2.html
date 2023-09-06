@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Client2</title>
+
+    <script src = "\webjars\jquery\3.1.1-1\jquery.js"></script>
+    <script src = "/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src = "/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src = "/Client2.js"></script>
+</head>
+<body>
+<div id = "cnt">
+    <input type="button" id="cnt-btn" value="Connect">
+</div>
+
+<div id="message-send">
+    <input type="text" id="msg" placeholder="Enter your message">
+    <input type="button" id="send-msg" value="Send">
+</div>
+
+<div id="dis">
+    <input type="button" id="dis-btn" value="Disconnect">
+</div>
+
+<div>
+    <table id="show-msg">
+
+    </table>
+</div>
+</body>
+</html>
