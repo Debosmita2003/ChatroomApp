@@ -11,8 +11,14 @@ public class MessageController {
 
     @MessageMapping("/sendMsg")          //To send a message at first this url is needed  (Application destination prefix)
     @SendTo("/topic/sendTo")            //To subscribe so that we can receive messages, this url is needed
-    public Message getMessage(final Message message) throws Exception
+    public Message getMessage(final Message message)
     {
+        try{
+            Thread.sleep(1000);
+        }
+        catch (InterruptedException e){
+            e.printStackTrace();
+        }
         return message;
     }
 }

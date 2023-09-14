@@ -14,7 +14,7 @@ function Connect(){
 
 function ShowMessage(message){
     var newRow = $('<tr></tr>');
-        newRow.append("<td>" + message.content + "</td>");
+        newRow.append("<td>" + message.message + "</td>");
         $('#show-msg').append(newRow);
 }
 

@@ -19,9 +19,10 @@ function Connect(){
 }
 
 function ShowMessage(message){
-    msg = "<tr><td>" + message.content + "</td></tr>";
-    tableBody = $('#show-msg');
-    tableBody.append(msg);
+    var newRow = $('<tr></tr>');
+    newRow.append("<td>" + message.message + "</td>");
+
+    $('#show-msg').append(newRow);
 }
 
 function disconnect(){
